@@ -1,0 +1,8 @@
+h1 User
+form(action="/users/search", method="GET")
+    input(type="text", name="q")
+    button seach
+
+ul
+    each item in users
+        li= item.name
