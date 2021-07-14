@@ -1,8 +1,23 @@
-h1 User
-form(action="/users/search", method="GET")
-    input(type="text", name="q")
-    button seach
+extends ../layout/layout
+block content
+     .container
+        h1.text-center USER
+            .d-flex
+                a(href="/users/create") New
+                form.d-flex.mx-5(action="/users/search", method="GET")
+                    input.form-control(type="text", name="q")
+                    button.btn.btn-primary.mx-3 seach
 
-ul
-    each item in users
-        li= item.name
+            table.table.table-bordered
+                tr.text-center
+                    th Name
+                    td Phone
+                    td Address
+                    th View
+                each item in users
+                    tr.text-center
+                        td= item.name
+                        td=item.phone
+                        td=item.address
+                        td
+                            a(href="users/" + item.id) View

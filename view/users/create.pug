@@ -1,0 +1,15 @@
+extends ../layout/layout
+
+block content
+    .container
+        h1.text-center CREATE USER
+
+        form(action="/users/create", method="POST")
+            label.form-label(for='name') Name
+            input#name.form-control(type='text', name="name")
+            label.form-label(for='phone') Phone
+            input#phone.form-control(type='text', name="phone")
+            label.form-label(for='address') address
+            input#address.form-control(type='text', name="address")
+            button.btn.btn-primary.mt-3 Create
+        a(href="/users") Back

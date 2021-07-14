@@ -1,0 +1,18 @@
+extends ../layout/layout
+block content
+    .container.text-center
+        h1 Users Detail
+
+        h3
+            span Name:
+            span &nbsp;
+            span= user.name
+        h3
+            span Phone:
+            span &nbsp;
+            span= user.phone
+        h3
+            span Address:
+            span &nbsp;
+            span= user.address
+        a(href='/users') Back

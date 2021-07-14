@@ -1,0 +1,38 @@
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+    .container
+        a.navbar-brand(href='/')
+            h1.logo.mt-lg-1 NODEJS-DEMO
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation' data-spy='affix' data-offset-top='700 ')
+            span.navbar-toggler-icon
+        #navbarNavDropdown.collapse.navbar-collapse
+            ul.navbar-nav.d-sm-flex.mx-xl-2.col-md-4.col-lg-4.col-xl-9
+                li.nav-item.active
+                    a.nav-link(href='#')
+                        i.fa.fa-instagram(aria-hidden='true')
+                li.nav-item.active
+                    a.nav-link(href='#')
+                        i.fa.fa-facebook(aria-hidden='true')
+                li.nav-item.active
+                    a.nav-link(href='#')
+                        i.fa.fa-github(aria-hidden='true')
+                li.nav-item.active.mx-lg-1
+                    a.nav-link(routerlink='/home') BLOG
+                li.nav-item.mx-lg-1
+                    a.nav-link(routerlink='/home') C&Ocirc;NG VI&#x1EC6;C
+                li.nav-item.dropdown.mx-lg-1
+                    a#dropdownMenuButton.nav-link.dropdown-toggle(href='#' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                        | T&Iacute;NH N&Abreve;NG
+                    .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                        a.dropdown-item(href='#') ASOI
+                        a.dropdown-item(href='#') Tool &Dstrok;&abreve;ng k&yacute; h&#x1ECD;c ph&#x1EA7;n
+                        a.dropdown-item(href='#') T&iacute;nh &dstrok;i&#x1EC3;m trung b&igrave;nh IUH
+                li.nav-item.mx-lg-1
+                    a.nav-link LI&Ecirc;N H&#x1EC6;
+            ul.navbar-nav.mx-xxl-5.col-md-8.col-lg-8.col-xl-4
+                li.nav-item.mx-lg-1
+                    a.nav-link(href="#") &Dstrok;&Abreve;NG NH&#x1EAC;P
+                li.nav-item.mx-lg-1
+                    a.nav-link(href="#") &Dstrok;&Abreve;NG K&Yacute;
+
+style
+    include ../style/nav.css
